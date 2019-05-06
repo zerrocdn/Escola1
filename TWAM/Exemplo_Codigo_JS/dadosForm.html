@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<Title>Exemplo Javascript</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="JS">
+	<meta name="keywords" content="JS">
+	<meta name="author" content="twam">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="biblioteca.js" type="text/javascript" charset="iso-8859-1"></script>
+</head>
+<body>
+    <script type="text/javascript">loadCabecalhos();</script>
+	<form action="" name="registo" onsubmit="return validation('txtMsg')">
+		<label>Primeiro Nome:</label>
+		<input type="text" id="nome" name="nome"/><p/>
+		<label>País:</label>
+		<select name="pais" id="pais" onchange="selecaoPais('codPais')">
+			<option>Escolha um país</option>
+			<option value="es">Espanha</option>
+			<option value="pt">Portugal</option>
+		</select><p/>
+		<label>Código do Pais:</label>
+        <span id="codPais"></span>
+        <p>
+		<input type="submit" value="Registar"/>
+	</form>
+
+	<p id="txtMsg" />
+</html>

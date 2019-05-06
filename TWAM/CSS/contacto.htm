@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<Title>O Meu Sítio Web Pessoal - Contacto</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="description" content="contactos pessoais físicos e digitais">
+	<meta name="keywords" content="contactos">
+	<meta name="author" content="twam">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="lib.js" type="text/javascript" charset="utf-8"></script>
+	<link rel=stylesheet href="estilos.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<script type="text/javascript">
+			loadHeader();
+		</script>
+	</header>
+	<nav>
+			<script type="text/javascript">
+				navBar("Contactos");
+			</script>
+	</nav>
+	<section>
+		<h2>Contactos</h2>
+		<article>
+			<h3>Dados Pessoais</h3>
+			<b>Email</b>: <a href="mailto:myname@xpto.pt">myname@xpto.pt</a><br />
+			<b>Web Page:</b> <a href="http://mypage.xpto.pt">http://mypage.xpto.pt</a><br />
+			<b>LinkedIn:</b> <a href="http://mypage.xpto.pt">https://pt.linkedin.com/in/xpto-8332637</a><br />
+			<b>SkypeID:</b> Myxpto<br />
+		</article>
+
+		<article>
+			<h3>Formulário para envio de mensagem</h3>
+			<form method="post" enctype="multipart/form-data" action="http://www.xpto.pt/contacto.php">
+				<fieldset>
+					<legend>Envio de Mensagem</legend>
+					<b><label for="nome">Nome:</label></b><br />
+					<input type="text" id="nome" name="name" size="44" required /><span class="required"> * Campo
+						Obrigatório</span>
+					<br /><br />
+
+					<b><label for="email">Endereço Correio Electrónico:</label></b><br />
+					<input type="email" name="email" id="email" size="44" required /><span class="required"> * Campo
+						Obrigatório</span>
+					<br /><br />
+
+					<b><label for="tipo">Tipo de Contacto:</label></b><br />
+					<select size="2" id="tipo" name="Country" required>
+						<option>Pessoal</option>
+						<option>Profissional</option>
+					</select><span class="required"> * Campo Obrigatório</span>
+					<br /><br />
+
+					<b><label for="assunto">Assunto:</label></b><br />
+					<textarea rows="8" id="assunto" name="assunto" cols="29"></textarea>
+					<br /><br />
+
+					<input type="submit" value="Enviar Mensagem" name="enviar" />&nbsp;
+					<input type="reset" value="Limpar Dados" name="Limpar" />
+				</fieldset>
+			</form>
+		</article>
+	</section>
+	<footer>
+			<script type="text/javascript">
+				loadFooter();
+			</script>
+		</footer>
+</body>
+
+</html>

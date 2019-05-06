@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<Title>Exemplo Javascript</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="JS">
+	<meta name="keywords" content="JS">
+	<meta name="author" content="twam">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="biblioteca.js" type="text/javascript" charset="iso-8859-1"></script>
+</head>
+<body>
+   <script type="text/javascript">loadCabecalhos();</script>
+   És Maior de Idade?<p>
+   <form action="" name="idade">
+		<label for="idade">Idade:</label>
+		<input type="text" id="idade" name="idade" size="2"/>
+		<input type="button" onclick="verificaIdade(idade.value,'estado_adulto')" value="Verificar"/>
+	</form>
+   <p id="estado_adulto"/>
+</body>
+</html>
