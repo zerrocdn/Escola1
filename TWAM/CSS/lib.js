@@ -24,3 +24,4 @@ function navBar(currentPage){
 function loadFooter(){
     document.writeln("Última actualização: 20/04/2018.<br>The HTML code of this page is validated by <a href='https://validator.w3.org/'>HTML W3C Validator</a>.<br>The CSS code is validated by <a href='https://jigsaw.w3.org/css-validator/'>CSS W3C Validator</a>.");
 }
+
